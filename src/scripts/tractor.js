@@ -1,4 +1,4 @@
-import { addPlant, usePlant } from "./field.js"
+import { addPlants, usePlants } from "./field.js"
 import { createAsparagus } from "./seeds/asparagus.js"
 import { createCorn } from "./seeds/corn.js"
 import { createPotato } from "./seeds/potato.js"
@@ -14,24 +14,24 @@ export const plantSeeds = (plan) => {
     plan.forEach(row => {
         row.forEach(plant => {
             if (plant === "Asparagus") {
-                addPlant(createAsparagus())
+                addPlants(createAsparagus())
             }
             else if (plant === "Corn") {
-                addPlant(createCorn())
+                addPlants(createCorn())
             }
             else if (plant === "Potato") {
-                addPlant(createPotato())
+                addPlants(createPotato())
             }
             else if (plant === "Soybean") {
-                addPlant(createSoybean())
+                addPlants(createSoybean())
             }
             else if (plant === "Sunflower") {
-                addPlant(createSunflower())
+                addPlants(createSunflower())
             }
             else if (plant === "Wheat") {
-                addPlant(createWheat())
+                addPlants(createWheat())
             }
         })
     })
-    return usePlant()
+    return usePlants()
 }

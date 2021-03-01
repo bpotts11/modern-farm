@@ -7,7 +7,7 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
+	color: whitesmoke;
 	font-family: "Comfortaa", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
@@ -34,3 +34,28 @@ h1,h2,h3,h4,h5,h6 {
     background-color: darksalmon;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: stretch;
+}
+
+.plant {
+    border: 1px dotted rgba(255, 255, 255, 0.536);
+    display: block;
+    padding: 1em;
+    width: 20%;
+    height: auto;
+    text-align: center;
+}
+
+body {
+    background: rgb(69,34,0);
+    background: radial-gradient(circle, rgba(69,34,0,1) 8%, rgba(59,30,0,1) 47%, rgba(41,21,1,1) 86%);
+}
+
+h1 {
+    text-align: center;
+    font-size: 70px;
+}

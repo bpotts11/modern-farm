@@ -1,7 +1,7 @@
 let field = []
 
 // adds each vegetable object/array to the field array 
-export const addPlant = (seed) => {
+export const addPlants = (seed) => {
     if (Array.isArray(seed)) {
         seed.forEach(item => field.push(item));
     } else {
@@ -9,6 +9,6 @@ export const addPlant = (seed) => {
     }
 }
 
-export const usePlant = () => {
+export const usePlants = () => {
     return field.slice()
 }
