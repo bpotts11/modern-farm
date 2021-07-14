@@ -18,7 +18,11 @@ let harvest = harvestPlants(plantedSeeds)
 
 // this orders the array in alphabetical order
 // let harvest = harvestPlants(plantedSeeds).sort((a, b) => a.type.localeCompare(b.type))
-// console.log('harvest: ', harvest);
+
+// this adds an id to the array of harvested plants
+// let id = 1
+// let harvestId = harvest.map(v => ({ ...v, id: id++ }))
+
 
 
 // This section returns the total occurrences of each plant type
