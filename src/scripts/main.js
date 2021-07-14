@@ -15,8 +15,10 @@ let plantedSeeds = usePlants()
 // console.log('allPlants: ', allPlants);
 
 //create array with per #of objects of each plant
-let harvest = harvestPlants(plantedSeeds)
-// console.log('harvest: ', harvest);
+// let harvest = harvestPlants(plantedSeeds)
 
+// this orders the array in alphabetical order
+let harvest = harvestPlants(plantedSeeds).sort((a, b) => a.type.localeCompare(b.type))
+console.log('harvest: ', harvest);
 
 Catalog(harvest)
