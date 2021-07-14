@@ -9,7 +9,7 @@ export const Catalog = (harvestFoodArray) => {
 
         contentElement.innerHTML += `
         <section class="plant">
-            ${harvest.type}
+            ${harvest.icon}
         </section>
         `
     })
